@@ -1,0 +1,281 @@
+/*Trabalhin do RAPHAEL (INF 241), consertado por CARLOS (INF 241 também) */
+
+/* [FONTES] */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =============== */
+
+/* [NAVBAR] */
+
+nav {
+    background-color: #18929D;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .Logo a {
+    color: #ffff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    margin-left: 7px;
+}
+
+nav li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* [BOTÕES] */
+
+.botoes {
+    margin: auto !important;
+}
+
+.n-overlay,
+.overlay {
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* [BANNER] */
+
+.banner {
+    height: 100vh;
+    background-image: url(fts/pontal-do-atalaia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner2 {
+    height: 100vh;
+    background-image: url(fts/arraial_do_cabo-wallpaper-3840x2400.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fundointeiro {
+    background-image: url(fts/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+}
+
+.banner3 {
+    height: 100vh;
+    background-image: url(fts/arraial-do-cabo-bay-beach-boats.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fundointeiro {
+    background-image: url(fts/download\.jpg);
+    background-repeat: no-repeat;
+}
+
+.banner4 {
+    height: 100vh;
+    background-image: url(fts/1031883.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner5 {
+    height: 100vh;
+    background-image: url(fts/2102413405.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner6 {
+    height: 100vh;
+    background-image: url(fts/2102413405.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* [TEXTO] */
+
+.texto .titulo {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.texto .sub_titulo {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.texto .botoes {
+    margin-top: 30px;
+}
+
+.texto .botoes {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.texto .botoes button.n-overlay {
+    color: white;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+}
+
+.texto .botoes button.n-overlay:hover {
+    color: black;
+    background-color: white;
+}
+
+.texto .botoes button.overlay {
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+.paragrafo {
+    color: white;
+    padding: 20px 60px;
+}
+
+.video {
+    padding-left: 10px;
+}
+
+/*  */
+
+.input {
+    margin-top: 14px;
+}
+
+.insta-link {
+    margin-left: 15px;
+}
+
+/* [SCROLLBAR] */
+
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 16px;
+    border: 4px solid #fff
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #808080;
+    transition: 0.5s;
+}
+
+/* [KEYFRAMES] */
+
+@keyframes vibrar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    line-height: 40px;
+}
+button{
+    background-color: #bd0000;
+    border: 1px solid white;
+    padding: 4px;
+}
